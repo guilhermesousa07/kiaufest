@@ -1,0 +1,26 @@
+{
+  "name": "kiau-fest-neon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma de eventos KIAU FEST com painel administrativo e mapa 3D",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-mysql-session": "^3.0.3",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

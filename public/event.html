@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Evento | KIAU FEST</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Configuração do Three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img src="/assets/logo.png">
+      <span>KIAU<span class="neon">FEST</span></span>
+    </a>
+
+    <a class="btn ghost" href="/">Voltar</a>
+  </header>
+
+  <main class="section event-detail" id="eventDetail">
+    <div class="loading">Carregando evento...</div>
+  </main>
+
+  <script type="module" src="/js/event.js"></script>
+
+</body>
+</html>

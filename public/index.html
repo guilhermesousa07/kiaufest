@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080611">
+  <title>KIAU FEST — Viva o extraordinário</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/assets/logo.png" alt="KIAU FEST"><span>KIAU<span class="neon">FEST</span></span></a>
+    <nav><a href="#eventos">Eventos</a><a href="#experiencia">Experiência 3D</a><a href="#sobre">Sobre</a></nav>
+    <div class="top-actions"><button class="btn ghost" id="accountBtn">Minha conta</button><a class="btn neon-btn" href="/admin">Painel ↗</a></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> PRODUÇÃO DE EXPERIÊNCIAS • VALE DO JEQUITINHONHA</div>
+        <h1>VIVA O<br><span class="gradient-text">EXTRAORDINÁRIO.</span></h1>
+        <p>Eventos que conectam pessoas, música e momentos que ficam para sempre.</p>
+        <div class="hero-actions"><a class="btn neon-btn large" href="#eventos">Explorar eventos <span>↗</span></a><a class="btn ghost large" href="#experiencia">Explorar espaço 3D</a></div>
+        <div class="hero-meta"><div><b>01</b><span>Experiências únicas</span></div><div><b>02</b><span>Produção criativa</span></div><div><b>03</b><span>Memórias reais</span></div></div>
+      </div>
+      <div class="hero-art"><div class="ring ring-a"></div><div class="ring ring-b"></div><div class="hero-core"><span>K</span></div><div class="floating-tag tag-top">● LIVE EXPERIENCES</div><div class="floating-tag tag-bottom">KIAU FEST / 2026</div></div>
+      <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="section events-section" id="eventos">
+      <div class="section-head"><div><div class="eyebrow">AGENDA KIAU / 001</div><h2>PRÓXIMAS <span class="gradient-text">EXPERIÊNCIAS.</span></h2></div><p>Encontre seu próximo momento inesquecível.</p></div>
+      <div class="event-grid" id="eventsGrid"><div class="loading">Carregando experiências...</div></div>
+    </section>
+
+    <section class="experience section" id="experiencia">
+      <div class="section-head"><div><div class="eyebrow">KIAU EXPERIENCE / 3D</div><h2>EXPLORE ANTES<br><span class="gradient-text">DE CHEGAR.</span></h2></div><p>Conheça o espaço, descubra os setores e imagine a experiência.</p></div>
+      <div class="map-shell">
+        <div class="map-toolbar"><div><span class="live-dot"></span> AMBIENTE 3D INTERATIVO</div><div class="map-controls"><button id="mapReset">Centralizar</button><button id="mapToggle">Alternar vista</button></div></div>
+        <div id="venue3d" class="venue3d"><div class="map-loading">Preparando ambiente 3D...</div></div>
+        <div class="map-legend"><span><i class="dot stage"></i>Palco</span><span><i class="dot vip"></i>Área VIP</span><span><i class="dot pista"></i>Pista</span><span><i class="dot bar"></i>Serviços</span></div>
+      </div>
+      <p class="map-note">Use o mouse ou toque para girar e aproximar. Este é um espaço demonstrativo; o painel permite carregar modelos reais em GLB/GLTF.</p>
+    </section>
+
+    <section class="cta-band" id="sobre"><div class="eyebrow">KIAU FEST / BEYOND THE ORDINARY</div><h2>O PRÓXIMO CAPÍTULO<br>COMEÇA <span class="gradient-text">AQUI.</span></h2><a class="btn neon-btn large" href="#eventos">Encontrar um evento ↗</a></section>
+  </main>
+
+  <footer><a class="brand" href="/"><img src="/assets/logo.png" alt=""><span>KIAU<span class="neon">FEST</span></span></a><span>© <span id="year"></span> KIAU FEST. Todos os direitos reservados.</span><span>FEITO PARA VIVER.</span></footer>
+
+  <div class="modal" id="authModal"><div class="modal-card"><button class="modal-close" id="closeModal">×</button><div class="eyebrow">ACESSO KIAU</div><h2 id="authTitle">ENTRE NA<br><span class="gradient-text">EXPERIÊNCIA.</span></h2><form id="authForm"><label id="nameWrap" class="hidden">Nome<input name="name" autocomplete="name"></label><label>E-mail<input type="email" name="email" required autocomplete="email"></label><label>Senha<input type="password" name="password" required minlength="8" autocomplete="current-password"></label><p class="form-message" id="authMsg"></p><button class="btn neon-btn full">Continuar ↗</button></form><button class="text-btn" id="switchAuth">Ainda não tem conta? Criar cadastro</button></div></div>
+  <script type="module" src="/js/main.js"></script>
+</body></html>
